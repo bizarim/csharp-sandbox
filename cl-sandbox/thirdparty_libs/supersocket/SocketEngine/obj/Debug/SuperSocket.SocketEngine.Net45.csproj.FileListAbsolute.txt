@@ -1,0 +1,15 @@
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketEngine.XML
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketEngine.dll
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketEngine.pdb
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.Common.dll
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketBase.dll
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\log4net.dll
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.Common.pdb
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.Common.xml
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketBase.pdb
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\bin\Debug\SuperSocket.SocketBase.xml
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\obj\Debug\SuperSocket.SocketEngine.Net45.csprojAssemblyReference.cache
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\obj\Debug\SuperSocket.SocketEngine.Net45.csproj.CoreCompileInputs.cache
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\obj\Debug\SuperSocket.SocketEngine.Net45.csproj.CopyComplete
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\obj\Debug\SuperSocket.SocketEngine.dll
+C:\Project\sandboxs\cl-sandbox\thirdparty_libs\supersocket\SocketEngine\obj\Debug\SuperSocket.SocketEngine.pdb
