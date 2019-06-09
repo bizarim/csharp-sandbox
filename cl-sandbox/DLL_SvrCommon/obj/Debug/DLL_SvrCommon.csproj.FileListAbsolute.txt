@@ -1,6 +1,0 @@
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\bin\Debug\DLL_SvrCommon.dll
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\bin\Debug\DLL_SvrCommon.pdb
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\obj\Debug\DLL_SvrCommon.csproj.CoreCompileInputs.cache
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\obj\Debug\DLL_SvrCommon.dll
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\obj\Debug\DLL_SvrCommon.pdb
-C:\Project\sandboxs\cl-sandbox\DLL_SvrCommon\obj\Debug\DLL_SvrCommon.csprojAssemblyReference.cache
