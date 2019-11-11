@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LibCommon.Protocol.Base;
 
 namespace LibCommon.Protocol.Auth
 {
-    class SignIn
+    public class SignInRequest : Request
+    {
+    }
+
+    public class SignInResponse : Response
     {
     }
 }
