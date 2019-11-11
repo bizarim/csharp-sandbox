@@ -1,4 +1,0 @@
-﻿<History>
-
-2017.08.01	SuperWebSocket 사용 및 연동
-2017.07.30	Version 알파		착수
