@@ -444,7 +444,7 @@ namespace SuperWebSocket
         /// <param name="reason">The reason.</param>
         public override void Close(CloseReason reason)
         {
-            // 강명규 20170426 그냥 핸드쉐이크 거치지말고 곧바로 종료시키자.
+            // 핸드쉐이크 거치지말고 곧바로 종료시키자.
             //if (reason == CloseReason.TimeOut && ProtocolProcessor != null)
             //{
             //    CloseWithHandshake(ProtocolProcessor.CloseStatusClode.NormalClosure, "Session timeOut");

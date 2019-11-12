@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IServer.cs" />
+    <Compile Include="Dispatcher\IDispatcher.cs" />
+    <Compile Include="Network\Buffer.cs" />
+    <Compile Include="Server\IServer.cs" />
+    <Compile Include="Sevlet\ISevlet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServerExecuter.cs" />
+    <Compile Include="Server\ServerExecuter.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

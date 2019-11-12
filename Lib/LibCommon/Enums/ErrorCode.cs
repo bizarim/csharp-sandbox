@@ -3,7 +3,7 @@
     /// <summary>
     /// 에러코드
     /// </summary>
-    public enum ErrorType
+    public enum ErrorCode
     {
         Success = 0,
         Critical = 1,
