@@ -6,15 +6,15 @@
 
 ```sh
 │  README.md
-├─cl-sandbox
-   ├─supersocket famework
+├─Dependency (의존 프로젝트 및 DLL)
+│ 
+├─Lib (제작 라이브러리)
+│ │ 
+│ ├─ LibCommon
+│ └─ LibServerCommon
+│ 
+└─Servers (서버 모음)
    │ 
-   ├─DLL_Common (공통 사용 dll)
-   │
-   ├─DLL_SvrCommon (서버 공통 사용 dll)
-   │ 
-   ├─appAuthServer (인증 서버)
-   │ 
-   └─appLobbyServer (로비 서버)
+   └─AppLobbyServer (테스트용 로비 서버)
 
 ```
