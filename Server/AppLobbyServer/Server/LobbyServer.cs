@@ -35,7 +35,7 @@ namespace AppLobbyServer.Server
                 return false;
             }
 
-            Player.PlayerShardDBInfo.strConnMainDb = Config.strConnMainDb;
+            // Player.PlayerShardDBInfo.strConnMainDb = Config.strConnMainDb;
 
             theWebSocketServer = new WebSocketServer();
 

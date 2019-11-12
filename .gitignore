@@ -226,10 +226,6 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
-Tools/.vs/datatool/v15/Server/sqlite3/storage.ide-shm
-Tools/.vs/datatool/v15/Server/sqlite3/storage.ide-wal
-Tools/.vs/datatool/v15/Server/sqlite3/storage.ide-shm
-*/serverConfigDev.js
 
 # =============== #
  
@@ -259,13 +255,13 @@ ExportedObj/
  
 *.userprefs
  
-*.csproj
+# *.csproj
  
 *.pidb
  
 *.suo
  
-*.sln
+# *.sln
  
 *.user
  
