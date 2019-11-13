@@ -52,14 +52,14 @@
     <None Include="log4net.config">
       <SubType>Designer</SubType>
     </None>
-    <Compile Include="Server\IocContainer.cs" />
+    <Compile Include="Dispatcher\DispatcherMessage.cs" />
+    <Compile Include="Message\BufferError.cs" />
+    <Compile Include="Message\ProtocolError.cs" />
     <Compile Include="Server\LobbyHandler.cs" />
-    <Compile Include="Sevlet\ClientRequest.cs" />
-    <Compile Include="Sevlet\KeepAlive.cs" />
+    <Compile Include="Message\HealthCheck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server\LobbyServer.cs" />
-    <Compile Include="Server\LobbyServerConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

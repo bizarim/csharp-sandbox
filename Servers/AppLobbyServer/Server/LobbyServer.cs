@@ -1,40 +1,39 @@
-﻿using LibServerCommon.Server;
-using System;
+﻿using System;
 using SuperSocket.SocketBase;
 using SuperWebSocket;
-using System.Reflection;
 
 namespace AppLobbyServer.Server
 {
-    public class LobbyServer : IServer
+    public class LobbyServer : LibServerCommon.Server.IServer
     {
+        // logger
         private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(typeof(LobbyServer));
 
-        public LobbyServerConfig config = new LobbyServerConfig();
+        // handler
+        protected LibServerCommon.Server.IServerHandler handler = new LobbyHandler();
 
+        // was
         public WebSocketServer webSocketServer = new WebSocketServer();
 
-        public bool Initialize() {
+        public bool Initialize()
+        {
             // register ioc
-            DispatcherMessage.Register<Sevlet.KeepAlive>((int)LibCommon.Protocol.Lobby.LobbyProtocolType.KeppAliveRequest);
+            Dispatcher.DispatcherMessage.Register<Message.HealthCheck>((int)LibCommon.Protocol.Lobby.LobbyProtocolType.HealthCheckRequest);
             return true;
         }
 
-        public bool LoadConfig(string[] args) { return true; }
-
-        public bool LoadData() { return true; }
-
         public void Start()
         {
-
-            if (false == this.webSocketServer.Setup(new SuperSocket.SocketBase.Config.ServerConfig
+            var sc = new SuperSocket.SocketBase.Config.ServerConfig
             {
                 MaxConnectionNumber = 40000,
                 Port = 10230,
                 IdleSessionTimeOut = 60 * 5,
                 ClearIdleSession = true,
                 ClearIdleSessionInterval = 10
-            })) // Setup with listening port
+            };
+
+            if (false == this.webSocketServer.Setup(sc)) // Setup with listening port
             {
                 logger.Error("Failed to setup!");
                 Console.ReadKey();
@@ -43,7 +42,6 @@ namespace AppLobbyServer.Server
             }
 
             // handler
-            var handler = new LobbyHandler();
             this.webSocketServer.NewMessageReceived += new SessionHandler<WebSocketSession, string>(handler.NewMessageReceived);
             this.webSocketServer.NewDataReceived += new SessionHandler<WebSocketSession, byte[]>(handler.NewDataReceived);
             this.webSocketServer.NewSessionConnected += new SessionHandler<WebSocketSession>(handler.NewSessionConnected);
@@ -57,14 +55,33 @@ namespace AppLobbyServer.Server
                 return;
             }
 
-            logger.Info("LobbyServer Started");
+            logger.Info("AppLobbyServer Started");
+            Console.WriteLine("AppLobbyServer Started");
 
             // 우아하지 않게
             while (true) System.Threading.Thread.Sleep(1000);
         }
 
-        public void Stop() { }
+        public bool LoadConfig(string[] args)
+        {
+            // custom
+            return true;
+        }
 
-        public void Uninitialize() { }
+        public bool LoadData()
+        {
+            // custom
+            return true;
+        }
+
+        public void Stop()
+        {
+            // custom
+        }
+
+        public void Uninitialize()
+        {
+            // custom
+        }
     }
 }
