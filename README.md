@@ -1,5 +1,7 @@
 # csharp-sandbox
-## csharp supersocket, superwebsocket 으로 Server application 만들기
+```
+csharp supersocket, superwebsocket 으로 Server application 만들기
+```
 
 
 ### 구조
@@ -18,3 +20,10 @@
    └─AppLobbyServer (테스트용 로비 서버)
 
 ```
+
+### Message Passing Flow
+![message](/Doc/message.png)
+
+
+### Layer
+![layer](/Doc/layer.png)
