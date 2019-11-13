@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibServerCommon", "Lib\LibS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLobbyServer", "Servers\AppLobbyServer\AppLobbyServer.csproj", "{162197BE-8FD5-4A65-84FF-EF55F9861493}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibRtRanking", "Lib\LibRtRanking\LibRtRanking.csproj", "{9946D16B-A09C-448F-AB0C-E718D8285376}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,14 @@ Global
 		{162197BE-8FD5-4A65-84FF-EF55F9861493}.Release|Any CPU.Build.0 = Release|Any CPU
 		{162197BE-8FD5-4A65-84FF-EF55F9861493}.Release|x64.ActiveCfg = Release|Any CPU
 		{162197BE-8FD5-4A65-84FF-EF55F9861493}.Release|x64.Build.0 = Release|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Debug|x64.Build.0 = Debug|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Release|x64.ActiveCfg = Release|Any CPU
+		{9946D16B-A09C-448F-AB0C-E718D8285376}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +120,7 @@ Global
 		{62661F91-FF32-4228-9EAA-38B2B31EFD6E} = {22D4CCE6-28C4-4193-845E-729DDC2B44E5}
 		{AA2198CC-2A27-4345-8182-D0A911A74DCB} = {22D4CCE6-28C4-4193-845E-729DDC2B44E5}
 		{162197BE-8FD5-4A65-84FF-EF55F9861493} = {BB6C9F7C-42C8-44C3-99F4-806532037FAD}
+		{9946D16B-A09C-448F-AB0C-E718D8285376} = {22D4CCE6-28C4-4193-845E-729DDC2B44E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {558DE7C0-8CBF-4D71-A074-351B79D45FCC}
