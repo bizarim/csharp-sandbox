@@ -47,7 +47,8 @@
     <Compile Include="Protocol\Auth\AuthProtocolType.cs" />
     <Compile Include="Protocol\Auth\SignIn.cs" />
     <Compile Include="Protocol\Auth\SignUp.cs" />
-    <Compile Include="Protocol\Lobby\KeepAlive.cs" />
+    <Compile Include="Protocol\Error\ErrorResponse.cs" />
+    <Compile Include="Protocol\Lobby\HealthCheck.cs" />
     <Compile Include="Protocol\Lobby\LobbyProtocolType.cs" />
     <Compile Include="Protocol\Request.cs" />
     <Compile Include="Protocol\Response.cs" />

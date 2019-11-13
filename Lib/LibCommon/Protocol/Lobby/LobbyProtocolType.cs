@@ -7,9 +7,9 @@ namespace LibCommon.Protocol.Lobby
     public enum LobbyProtocolType
     {
         ErrorResonse = 1,
+        Exception,
 
-        KeppAliveRequest,
-        KeppAliveResponse,
-
+        HealthCheckRequest,
+        HealthCheckResponse,
     }
 }
