@@ -27,6 +27,8 @@ namespace AppLobbyServer.Server
 
         public void Start()
         {
+            // todo config 작업
+
             var sc = new SuperSocket.SocketBase.Config.ServerConfig
             {
                 MaxConnectionNumber = 40000,
