@@ -1,14 +1,15 @@
-﻿
+﻿using LibCommon.Protocol.Lobby;
+
 namespace AppLobbyServer.Message
 {
     public class HealthCheck : LibServerCommon.Message.AbsMessage
     {
-        private LibCommon.Protocol.Lobby.HealthCheckRequest reqParam = null;
-        private LibCommon.Protocol.Lobby.HealthCheckResponse resParam = new LibCommon.Protocol.Lobby.HealthCheckResponse();
+        private HealthCheckRequest reqParam = null;
+        private HealthCheckResponse resParam = new HealthCheckResponse();
 
         protected override void Pre()
         {
-            this.reqParam = Newtonsoft.Json.JsonConvert.DeserializeObject<LibCommon.Protocol.Lobby.HealthCheckRequest>(buffer.Contents);
+            this.reqParam = Newtonsoft.Json.JsonConvert.DeserializeObject<HealthCheckRequest>(buffer.Contents);
             if (null == reqParam)
             {
                 throw new LibServerCommon.Exception.RequestParamException("Error HealthCheckRequest Deserialize");
@@ -20,7 +21,7 @@ namespace AppLobbyServer.Message
             resParam.code = 0;
             sender.ToSuccess(
                 this.session,
-                (int)LibCommon.Protocol.Lobby.LobbyProtocolType.HealthCheckResponse,
+                (int)LobbyProtocolType.HealthCheckResponse,
                 Newtonsoft.Json.JsonConvert.SerializeObject(resParam)
             );
         }
@@ -30,7 +31,7 @@ namespace AppLobbyServer.Message
             // custom
         }
 
-        protected override void Release()
+        protected override void PostRelease()
         {
             reqParam = null;
             resParam = null;

@@ -53,6 +53,7 @@
       <SubType>Designer</SubType>
     </None>
     <Compile Include="Dispatcher\DispatcherMessage.cs" />
+    <Compile Include="Executor\ExecutorMessage.cs" />
     <Compile Include="Message\BufferError.cs" />
     <Compile Include="Message\ProtocolError.cs" />
     <Compile Include="Server\LobbyHandler.cs" />

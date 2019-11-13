@@ -5,6 +5,7 @@
     {
         void Initialize(SuperWebSocket.WebSocketSession ws, Network.Buffer buffer);
         void Process();
+        void Release();
     }
 
     public abstract class AbsMessage : IMessage
@@ -23,9 +24,9 @@
         protected abstract void Pre();
         protected abstract void Execute();
         protected abstract void Post();
-        protected abstract void Release();
+        protected abstract void PostRelease();
 
-        private void PrePelease()
+        private void PreRelease()
         {
             sender = null;
             buffer = null;
@@ -37,9 +38,11 @@
             Pre();
             Execute();
             Post();
+        }
 
-            PrePelease();
-            Release();
+        public void Release() {
+            PreRelease();
+            PostRelease();
         }
     }
 }

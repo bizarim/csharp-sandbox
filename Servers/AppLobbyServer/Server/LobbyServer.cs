@@ -15,6 +15,9 @@ namespace AppLobbyServer.Server
         // was
         public WebSocketServer webSocketServer = new WebSocketServer();
 
+        // ExecutorMessage
+        public static Executor.ExecutorMessage executorMessage = new Executor.ExecutorMessage();
+
         public bool Initialize()
         {
             // register ioc
@@ -54,6 +57,8 @@ namespace AppLobbyServer.Server
                 Console.ReadKey();
                 return;
             }
+
+            executorMessage.Start();
 
             logger.Info("AppLobbyServer Started");
             Console.WriteLine("AppLobbyServer Started");

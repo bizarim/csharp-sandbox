@@ -9,6 +9,7 @@ namespace AppLobbyServer.Server
         public void NewDataReceived(WebSocketSession session, byte[] datas)
         {
             var msg = Dispatcher.DispatcherMessage.Create<LibServerCommon.Message.IMessage>(session, datas);
+            LobbyServer.executorMessage.Add(msg);
         }
 
         public void NewMessageReceived(WebSocketSession session, string message)
